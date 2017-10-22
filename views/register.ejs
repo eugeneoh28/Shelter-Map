@@ -3,10 +3,11 @@
 <form action="/register" method="post">
     <input type="text" name="username" placeholder="username">
     <input type="password" name="password" placeholder="password">
+    <input type="number" name="spotsLeft">
     <select name="shelter">
-        <option value="s1">Shelter 1</option>
-        <option value="s2">Shelter 2</option>
-        <option value="s3">Shelter 3</option>
+        <%shelters.forEach(function(shelter) { %>
+            <option value="<%=shelter.name%>"><%=shelter.name%></option>
+        <%})%>
     </select>
     <button type="submit">Sign Up</button>
 </form>

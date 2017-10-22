@@ -1,5 +1,5 @@
 var socket = io();
-
-function updateCount () {
-    socket.emit('updatecount', {count:1});
-}
+$('#update').click(function() {
+    var data = $('#spots').val();
+    socket.emit('updateCount', {count:data, org:org});
+})
