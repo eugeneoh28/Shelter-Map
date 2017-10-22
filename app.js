@@ -10,10 +10,11 @@ var express = require("express"),
     io = require('socket.io')(http),
     seedDB = require("./seed");
 
-mongoose.connect("mongodb://localhost/shelter_map", {useMongoClient: true})
+//mongoose.connect("mongodb://localhost/shelter_map", {useMongoClient: true})
+mongoose.connect("mongodb://eugeneoh28:Asdfjkl;1@ds227565.mlab.com:27565/shelter_map", {useMongoClient: true})
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
-//seedDB();
+seedDB();
 
 app.set("view engine", "ejs");
 // PASSPORT CONFIGURATION
