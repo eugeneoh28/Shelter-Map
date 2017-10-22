@@ -43,6 +43,7 @@ font-family: "Arial";
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
+    overflow-x:hidden;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -345,4 +346,20 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+
+.scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+       overflow-y: scroll;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
 }

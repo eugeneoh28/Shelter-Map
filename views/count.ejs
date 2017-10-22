@@ -1,39 +1,54 @@
 <% include partials/header%>
-<div id="wrapper">
+	<div id="wrapper">
 
-	<!-- Sidebar -->
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<li class="sidebar-brand">
-				<div class="container">
-					<div class="left">
-						<h1>
-							<a href="home.ejs">
-								Shelter Map
-							</a>
-						</h1>
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<div class="container">
+						<div class="left" style=text-indent:0px;>
+							<h1>
+								<a href="home.ejs">
+									Shelter Map
+								</a>
+							</h1>
+						</div>
+
+
+
 					</div>
+				</li>
+				<li>
+					<h2>
+						<%=shelter[0].organization%>
+					</h2>
+					<h3>
+						<%=shelter[0].name%>
+					</h3>
+					<p>
+						<%=shelter.address%>
+							<%=shelter.city%>,
+								<%=shelter.state%>
+					</p>
+					<p>Capacity:
+						<%=shelter[0].capacity%>
+					</p>
+					<p>Number of spots left:
+						<%=shelter[0].spotsLeft%>
+					</p>
+				</li>
 
-					
+			</ul>
+		</div>
 
-				</div>
-			</li>
-                        <li>
-				<h2><%=shelter[0].organization%></h2>
-				<h3><%=shelter[0].name%></h3>
-				<p><%=shelter.address%> <%=shelter.city%>, <%=shelter.state%></p>
-                                <p>Capacity: <%=shelter[0].capacity%></p>
-                                <p>Number of spots left: <%=shelter[0].spotsLeft%></p>
-			</li>
-                        
-                </ul>
-         </div>
-    
-    <h3>Update number of spots left:</h3>
-    <input id="spots" type="number" name="count" placeholder="<%=shelter[0].spotsLeft%>">
-    <button id = "update">Update count</button>
-<script>
-    var org = "<%=shelter[0].organization%>";
-</script>
-<script src= "js/count.js" type="text/javascript"></script>
-<% include partials/footer%>
+		<div class="col-lg-6"></div>
+		<div class="col-lg-6">
+			<h3>Update number of spots left:</h3>
+			<input id="spots" type="number" name="count" placeholder="<%=shelter[0].spotsLeft%>">
+			<button id="update">Update count</button>
+		</div>
+		<script>
+			var org = "<%=shelter[0].organization%>";
+		</script>
+		<script src="js/count.js" type="text/javascript"></script>
+		<% include partials/footer%>
