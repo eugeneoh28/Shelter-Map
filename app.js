@@ -34,7 +34,7 @@ app.get("/", function(req, res){
         if (err) {
             console.log(err);
         } else {
-            res.render("home", {shelters : allShelters})
+            res.render("home", {shelters : allShelters, user: req.user});
         }   
     })
 });
