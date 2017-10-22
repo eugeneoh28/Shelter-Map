@@ -1,5 +1,10 @@
-<% include partials/header%>
-    <h1>Shelter Name: <%=shelter%></h1>
-    <input type="number" name="count" placeholder="">
-    <script src= "js/count.js" type="text/javascript"></script>
+<% include partials/header %>
+    <h1>Shelter Name: <%=shelter[0].name%></h1>
+    <h1>Spots Left:</h1>
+    <input id="spots" type="number" name="count" placeholder="<%=shelter[0].spotsLeft%>">
+    <button id = "update">Update count</button>
+<script>
+    var org = "<%=shelter[0].organization%>";
+</script>
+<script src= "js/count.js" type="text/javascript"></script>
 <% include partials/footer%>
