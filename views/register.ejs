@@ -75,16 +75,31 @@ button:hover{background:#000000;color:#fff}
 
 <h1>Register</h1>
 
-<form action="/register" method="post">
-    <input type="text" name="username" placeholder="username">
-    <input type="password" name="password" placeholder="password">
-    <input type="number" name="spotsLeft">
-    <select name="shelter">
-        <%shelters.forEach(function(shelter) { %>
-            <option value="<%=shelter.name%>"><%=shelter.name%></option>
-        <%})%>
-    </select>
-    <button type="submit">Sign Up</button>
-</form>
+<div class="container">
+		<form action="/register" method="post">
+			<label>
+				<b>Username</b>
+			</label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label>
+				<b>Password</b>
+			</label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<label>
+				<b>Spots Left at Shelter</b>
+			</label>
+			<input type="number" placeholder="Capacity" name="spotsLeft" required>
+
+			<select name="shelter">
+					<%shelters.forEach(function(shelter) { %>
+						<option value="<%=shelter.name%>"><%=shelter.name%></option>
+					<%})%>
+				</select>
+
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
 
 <% include partials/footer%>

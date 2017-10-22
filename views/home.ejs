@@ -25,10 +25,10 @@
 			<li>
 				<div class="container">
 					<div style=width:25%;>
-						<a href="http://sheltermap.herokuapp.com" id="loginform">Login</a>
+						<a href="login.ejs" id="loginform">Login</a>
 					</div>
 					<div>
-						<a href="http://sheltermap.herokuapp.com/register" id="registerform">Register</a>
+						<a href="register.ejs" id="registerform">Register</a>
 					</div>
 					<%if (user) {%>
 						<div>
@@ -46,7 +46,7 @@
                             </h3>
                             <p><%=shelter.address%> <%=shelter.city%>, <%=shelter.state%></p>
                             <p><b>Capacity:</b> <%=shelter.capacity%></p>
-                            <p><b>>Number of spots left:</p> <%=shelter.spotsLeft%></p>
+                            <p><b>>Number of spots left:</b> <%=shelter.spotsLeft%></p>
                         </div>
                         <div class="right">
                             <!--insert image here-->
