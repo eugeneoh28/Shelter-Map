@@ -1,0 +1,13 @@
+<% include partials/header%>
+<h1>Register</h1>
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <select name="shelter">
+        <option value="s1">Shelter 1</option>
+        <option value="s2">Shelter 2</option>
+        <option value="s3">Shelter 3</option>
+    </select>
+    <button type="submit">Sign Up</button>
+</form>
+<% include partials/footer%>
