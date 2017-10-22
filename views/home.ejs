@@ -116,22 +116,32 @@
                     <div class="col-lg-12" >
                         <div id="map"></div>-->
 	<script>
+		var Shelters = <%-JSON.stringify(shelters)%>;
 													function initMap() {
-														var myLatLng = { lat: 47.61, lng: -122.33 };
-
+														var myLatLng = { lat: 47.607335, lng: -122.337979 };
 														// Create a map object and specify the DOM element for display.
 														var map = new google.maps.Map(document.getElementById('page-content-wrapper'), {
 															center: myLatLng,
-															zoom: 10
+															zoom: 14
 														});
-
-														// Create a marker and set its position.
-														var marker = new google.maps.Marker({
+														var pins = [];
+														Shelters.forEach(function(shelter) {
+															var test = {lat:shelter.lat, lng:shelter.lng};
+															var mark = new google.maps.Marker({
 															map: map,
-															position: myLatLng,
-															title: 'Hello World!'
+															position: test,
+															title: shelter.name
+															});
+															var bubble1 = {
+																content: '<strong>' + shelter.name + '</strong><br> Capacity: ' + shelter.capacity + '<br>' + 'Space Left:'
+															}
+															var bubble = new google.maps.InfoWindow(bubble1);
+															google.maps.event.addListener(mark, 'click', function() {
+																bubble.open(map, mark);
+															})
 														});
 													}
+					  
 
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRLK0ViVko-81pdhQwTf9Fs9sYEXV2WeI&callback=initMap" async
