@@ -165,88 +165,68 @@ font-family: "Arial";
 
 /*login*/
 #wrap {
-  margin: 0 auto 30px;
-}
-
-#regbar {
-  height: 67px;
-  background: #34495e;
-}
-
-#navthing {
-  margin-left: 50px;
-}
-
-h2 {
-  padding: 20px;
-  color: #ecf0f1;
-}
-
-fieldset {
-  border: none;
-}
-
-.login {
-  position: relative;
-  width: 350px;
-  display: none;
-}
-
-.register {
+    margin: 0 auto 30px;
+  }
+  
+  #regbar {
+    height: 67px;
+    background: #34495e;
+  }
+  
+  #navthing {
+    margin-left: 50px;
+  }
+  
+  h2 {
+    padding: 20px;
+    color: #ecf0f1;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .login {
     position: relative;
     width: 350px;
     display: none;
   }
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 15px solid #ECF0F1;
-  left: 10%;
-  position: absolute;
-  top: -10px;
-}
-
-.formholder {
-  background: #ecf0f1;
-  width: 350px;
-  border-radius: 5px;
-  padding-top: 5px;
-}
-.formholder input[type="email"], .formholder input[type="password"] {
-  padding: 7px 5px;
-  margin: 10px 0;
-  width: 96%;
-  display: block;
-  font-size: 18px;
-  border-radius: 5px;
-  border: none;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-.formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
-  outline: none;
-  box-shadow: 0 0 1px 1px #1abc9c;
-}
-.formholder input[type="submit"] {
-  background: #1abc9c;
-  padding: 10px;
-  font-size: 20px;
-  display: block;
-  width: 100%;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-}
-.formholder input[type="submit"]:hover {
-  background: #1bc6a4;
-}
-
-.formholder input[type="register"] {
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ECF0F1;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+  }
+  
+  .formholder {
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+  .formholder input[type="email"], .formholder input[type="password"] {
+    padding: 7px 5px;
+    margin: 10px 0;
+    width: 96%;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #1abc9c;
+  }
+  .formholder input[type="submit"] {
     background: #1abc9c;
     padding: 10px;
     font-size: 20px;
@@ -256,17 +236,19 @@ fieldset {
     color: #fff;
     border-radius: 5px;
   }
-.formholder input[type="register"]:hover {
+  .formholder input[type="submit"]:hover {
     background: #1bc6a4;
   }
+  
+  .randompad {
+    padding: 10px;
+  }
+  
+  .green {
+    color: #1abc9c;
+  }
 
-.randompad {
-  padding: 10px;
-}
-
-.green {
-  color: #1abc9c;
-}
+  
 
 .container{
     width:425px;
@@ -286,77 +268,4 @@ fieldset {
 
 #login{
     padding-top:43px;
-}
-
-.center{
-    width: 150px;
-      margin: 40px auto;
-      
-    }
-
-
-
-
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 25px;
-    top: 0; 
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
 }
