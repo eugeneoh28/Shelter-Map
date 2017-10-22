@@ -40,7 +40,10 @@
 			</div>
 			<!-- /#sidebar-wrapper -->
 
-			<!-- Page Content -->
+		</div>
+		<!-- /#wrapper -->
+		
+		<!-- Page Content -->
 			<div id="page-content-wrapper"></div>
 				<!--<div class="container-fluid">
                 <div class="row">
@@ -48,12 +51,12 @@
                         <div id="map"></div>-->
 					<script>
 					  function initMap() {
-						var myLatLng = {lat: -25.363, lng: 131.044};
+						var myLatLng = {lat: 47.61, lng: -122.33};
 
 						// Create a map object and specify the DOM element for display.
 						var map = new google.maps.Map(document.getElementById('page-content-wrapper'), {
 						  center: myLatLng,
-						  zoom: 4
+						  zoom: 10
 						});
 
 						// Create a marker and set its position.
@@ -73,9 +76,6 @@
 					
 			
 			<!-- /#page-content-wrapper -->
-
-		</div>
-		<!-- /#wrapper -->
 		 <!-- Menu Toggle Script -->
 		<script>
 		$("#menu-toggle").click(function(e) {
