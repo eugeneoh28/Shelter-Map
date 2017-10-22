@@ -20,6 +20,7 @@ html, body {
 height: 100%;
 margin: 0;
 padding: 0;
+font-family: "Arial";
 }
 
 #wrapper {
@@ -50,7 +51,7 @@ padding: 0;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 425px;
 }
 
 #page-content-wrapper {
@@ -71,7 +72,7 @@ padding: 0;
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 425px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -86,6 +87,22 @@ padding: 0;
     display: block;
     text-decoration: none;
     color: #999999;
+}
+
+.sidebar-nav li h3 {
+    line-height: .75;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li p {
+    line-height: 1.5;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li p {
+    margin: 0;
 }
 
 .sidebar-nav li a:hover {
@@ -124,7 +141,7 @@ padding: 0;
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 425px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -142,4 +159,111 @@ padding: 0;
         position: relative;
         margin-right: 0;
     }
+}
+
+/*login*/
+#wrap {
+    margin: 0 auto 30px;
+  }
+  
+  #regbar {
+    height: 67px;
+    background: #34495e;
+  }
+  
+  #navthing {
+    margin-left: 50px;
+  }
+  
+  h2 {
+    padding: 20px;
+    color: #ecf0f1;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .login {
+    position: relative;
+    width: 350px;
+    display: none;
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #ECF0F1;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+  }
+  
+  .formholder {
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    padding-top: 5px;
+  }
+  .formholder input[type="email"], .formholder input[type="password"] {
+    padding: 7px 5px;
+    margin: 10px 0;
+    width: 96%;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px #1abc9c;
+  }
+  .formholder input[type="submit"] {
+    background: #1abc9c;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .formholder input[type="submit"]:hover {
+    background: #1bc6a4;
+  }
+  
+  .randompad {
+    padding: 10px;
+  }
+  
+  .green {
+    color: #1abc9c;
+  }
+
+  
+
+.container{
+    width:425px;
+}
+
+.left{
+    float:left;
+    width:60%;
+}
+
+
+.right{
+    float:right;
+    padding-top:18.72px;
+    width:40%;
+}
+
+#login{
+    padding-top:43px;
 }
