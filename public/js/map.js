@@ -1,6 +1,6 @@
 var socket = io();
 $(document).ready(function(){
-  setInterval(function(){refreshMap()}, 100);
+  setInterval(function(){window.location.reload()}, 1000);
 });
 
 function refreshMap(){
