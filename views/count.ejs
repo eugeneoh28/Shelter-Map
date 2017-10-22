@@ -1,6 +1,35 @@
-<% include partials/header %>
-    <h1>Shelter Name: <%=shelter[0].name%></h1>
-    <h1>Spots Left:</h1>
+<% include partials/header%>
+<div id="wrapper">
+
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<div class="container">
+					<div class="left">
+						<h1>
+							<a href="home.ejs">
+								Shelter Map
+							</a>
+						</h1>
+					</div>
+
+					
+
+				</div>
+			</li>
+                        <li>
+				<h2><%=shelter[0].organization%></h2>
+				<h3><%=shelter[0].name%></h3>
+				<p><%=shelter.address%> <%=shelter.city%>, <%=shelter.state%></p>
+                                <p>Capacity: <%=shelter[0].capacity%></p>
+                                <p>Number of spots left: <%=shelter[0].spotsLeft%></p>
+			</li>
+                        
+                </ul>
+         </div>
+    
+    <h3>Update number of spots left:</h3>
     <input id="spots" type="number" name="count" placeholder="<%=shelter[0].spotsLeft%>">
     <button id = "update">Update count</button>
 <script>
