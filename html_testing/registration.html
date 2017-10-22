@@ -46,7 +46,7 @@ h2 {
 }
 .form{
 	width:400px;
-	height:250px;
+	height:350px;
 	margin-left: 350px;
 	background:#e6e6e6;
 	border-radius:8px;
@@ -96,10 +96,16 @@ button:hover{
 </style>
 
 <div class="form">
-	<h2>Shelter Affliates Login</h2>
+	<h2>Shelter Affliates Registration</h2>
 	<form action="/login" method="post">
 		<input type="text" name ="username" placeholder="Username">
 		<input type="password" name ="password" placeholder="Password">
+		<input type="number" placeholder="max capacity" name="spotsLeft" required>
+		<select name="shelter">
+				<%shelters.forEach(function(shelter) { %>
+					<option value="<%=shelter.name%>"><%=shelter.name%></option>
+				<%})%>
+			</select>
 		<button type="submit">Log in</button>
 	</form>
 </div>
